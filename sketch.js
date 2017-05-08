@@ -4,10 +4,10 @@ function setup() {
     createCanvas(700, 500)
     frameRate(2);
     var maxH = height / 2;
-    for(x = 0; x <= width; x += 10) {
+    for(x = 0; x <= width; x += 5) {
         var col = [];
-        for(y = maxH; y <= height; y += 10) {
-            col.push(new Block(x, y, 10, 10));
+        for(y = maxH; y <= height; y += 5) {
+            col.push(new Block(x, y, 5, 5));
         }
         blocks.push(col);
     }
