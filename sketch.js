@@ -2,7 +2,7 @@ blocks = [];
 
 function setup() {
     createCanvas(700, 500)
-    frameRate(2);
+    frameRate(1);
     var maxH = height / 2;
     for(x = 0; x <= width; x += 5) {
         var col = [];
@@ -50,7 +50,7 @@ function Block(x, y, w, h) {
     }
 
     this.generate = function(blocks, x, y) {
-        var value = 0.05;
+        var value = 0.02;
 
         var n = blocks[x][y - 1];
         if(n && n.isStone) {
